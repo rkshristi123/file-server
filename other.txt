@@ -1,0 +1,19 @@
+
+"Image for Navigating Different Web Pages"
+
+As illustrated in the image above, the best way to navigate 
+different web pages using ejs template is to ensure you create a 
+folder called "partials" in your project's "views folder directory"
+ where you have your other ejs files.
+
+1) Then in that "partials folder" create 2 separate ejs files called header.ejs & footer.ejs.
+
+2) Then go to your home.ejs or index.ejs file depending on how you have named
+ your starting ejs file, and then cut ("All contents including the css and probably 
+ the bootstrap links in the boiler plate down to the opening body tag <body> 
+and paste in the header.ejs file in the partials folder").
+
+3) Also cut ("All contents from the closing body tag </body> of the "home or index.ejs "
+ file to the footer.ejs file in the partials folder"). Then instead of repeating the header and
+  footer sections for the subsequent pages i.e about.ejs or contact.ejs just link them to the header.ejs
+   and footer.ejs files in the partialss folder as below:
